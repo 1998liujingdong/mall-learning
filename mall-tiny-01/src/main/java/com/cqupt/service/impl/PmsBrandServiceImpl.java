@@ -6,6 +6,7 @@ import com.cqupt.mbg.model.PmsBrandExample;
 import com.cqupt.service.PmsBrandService;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -15,6 +16,7 @@ import java.util.List;
  * @menu
  * @date 2022/5/11 18:47
  */
+@Service
 public class PmsBrandServiceImpl implements PmsBrandService {
 
     @Autowired
