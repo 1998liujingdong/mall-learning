@@ -10,6 +10,6 @@ import org.springframework.context.annotation.Configuration;
  * @date 2022/5/11 17:05
  */
 @Configuration
-@MapperScan("com.cqupt.mbg.mapper")
+@MapperScan({"com.cqupt.mbg.mapper","com.cqupt.dao"})
 public class MybatisConfig {
 }
