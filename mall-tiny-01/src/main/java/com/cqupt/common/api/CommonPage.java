@@ -1,7 +1,6 @@
 package com.cqupt.common.api;
 
 import com.github.pagehelper.PageInfo;
-import lombok.Data;
 
 import java.util.List;
 
