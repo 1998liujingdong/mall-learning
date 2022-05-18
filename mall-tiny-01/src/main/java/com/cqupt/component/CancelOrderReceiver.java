@@ -2,7 +2,7 @@ package com.cqupt.component;
 
 /**
  * @author jingdong
- * @description:
+ * @description: 取消订单消息的处理者
  * @menu
  * @date 2022/5/16 21:12
  */

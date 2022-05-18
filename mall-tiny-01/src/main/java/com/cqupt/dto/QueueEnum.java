@@ -1,7 +1,5 @@
 package com.cqupt.dto;
 
-import lombok.Getter;
-
 /**
  * @author jingdong
  * @description: 消息队列枚举配置

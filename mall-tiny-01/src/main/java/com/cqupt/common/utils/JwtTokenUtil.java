@@ -109,7 +109,7 @@ public class JwtTokenUtil {
      */
     public boolean validateToken(String token, UserDetails userDetails) {
         String username = getUserNameFromToken(token);
-        return username.equals(userDetails.getUsername()) && !isTokenExpires(token);
+        return username.equals(userDetails.getUsername()) && !isTokenExpired(token);
     }
 
     /**
@@ -117,9 +117,9 @@ public class JwtTokenUtil {
      * @param token
      * @return
      */
-    private boolean isTokenExpires(String token) {
-        Date expireDate = getExpireDateFromToken(token);
-        return expireDate.before(new Date());
+    private boolean isTokenExpired(String token) {
+        Date expiredDate = getExpiredDateFromToken(token);
+        return expiredDate.before(new Date());
     }
 
     /**
@@ -127,7 +127,7 @@ public class JwtTokenUtil {
      * @param token
      * @return
      */
-    private Date getExpireDateFromToken(String token) {
+    private Date getExpiredDateFromToken(String token) {
         Claims claims = getClaimsFromToken(token);
         return claims.getExpiration();
     }
@@ -150,7 +150,7 @@ public class JwtTokenUtil {
      * @return
      */
     public boolean canRefresh(String token) {
-        return !isTokenExpires(token);
+        return !isTokenExpired(token);
     }
 
     /**
