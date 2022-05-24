@@ -10,10 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * @author jingdong
- * @description: 前台订单管理Service实现类
- * @menu
- * @date 2022/5/16 20:40
+ * 前台订单管理Service实现类
  */
 @Service
 public class OmsPortalOrderServiceImpl implements OmsPortalOrderService {

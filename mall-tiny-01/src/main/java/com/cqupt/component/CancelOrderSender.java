@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  * @author jingdong
  * @description: 取消订单消息的发出者
  * @menu
- * @date 2022/5/16 20:43
+ * @date 2022/5/24 20:21
  */
 @Component
 public class CancelOrderSender {
